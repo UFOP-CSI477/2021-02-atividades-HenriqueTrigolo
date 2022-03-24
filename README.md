@@ -2,11 +2,11 @@
 
 ## Atualize os seus dados
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome: Henrique Trigolo de Almeida
+- Matrícula: 16.1.8195
+- Curso: Sistemas de Informação
+- Semestre/Ano correntes: 2021/02
+- Link para o seu GitHub: [Henrique](https://github.com/HenriqueTrigolo)
 
 ## [Projeto final:](./Projeto/README.md)
 
