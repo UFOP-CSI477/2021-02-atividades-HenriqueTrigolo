@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+p{
+    background-color: orangered;
+    width: 500px;
+    margin: 10px;
+}
+
+.dados{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
