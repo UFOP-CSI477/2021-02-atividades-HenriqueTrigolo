@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de pessoa</title>
+</head>
+<body>
+    
+    <h1>Dados do cadastro da pessoa</h1>
+
+    <form method="post" action="validar.html">
+
+        <div>
+            <label for="Pnome">Primeiro nome:</label>
+            <input type="text" name="nome" id="Pnome" placeholder="Nome">
+        </div>
+        <div>
+            <label for="Snome">Sobrenome:</label>
+            <input type="text" name="nome" id="Snome" placeholder="Sobrenome">
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="text" name="idade" id="idade" placeholder="xx">
+        </div>
+        <div>
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado">
+        </div>
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+        </div>
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+        </div>
+        <div>
+            <label for="rg">RG:</label>
+            <input type="text" name="rg" id="rg" placeholder="Somente Números">
+        </div>
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Somente Números">
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" placeholder="xxxxxx@xxxx.xxx">
+        </div>
+        <div>
+            <label >Genero:</label>
+            <div>
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="NB">
+                <label for="naobinario">Não Binário</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="semresposta" value="SR">
+                <label for="semresposta">Prefiro não responder</label>
+            </div>
+        </div>
+
+        <div>
+
+            <label>Área de Interesse</label>
+            <div>
+                <input type="checkbox" name="web" id="web">
+                <label for="web">Sistemas Web</label>
+            </div>
+            <div>
+                <input type="checkbox" name="bd" id="bd">
+                <label for="bd">Banco de Dados</label>
+            </div>
+            <div>
+                <input type="checkbox" name="redes" id="redes">
+                <label for="redes">Redes</label>
+            </div>
+            <div>
+                <input type="checkbox" name="aeds" id="aeds">
+                <label for="aeds">Aeds</label>
+            </div>
+            <div>
+                <input type="checkbox" name="prog" id="prog">
+                <label for="prog">Programação de Computadores</label>
+            </div>
+            <div>
+                <input type="checkbox" name="grafos" id="grafos">
+                <label for="grafos">Teoria dos Grafos</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <a href="banco_de_dados_web.html">Início</a>
+
+</body>
+</html>
