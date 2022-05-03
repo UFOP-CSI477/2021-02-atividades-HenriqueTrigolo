@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JS</title>
+
+    <script>
+        function Pessoa(nome, sobrenome, idade, estado, cidade){
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+            this.idade = idade;
+            this.estado = estado;
+            this.cidade = cidade;
+        }
+
+        function carregaDados(){
+
+            const nome = window.prompt('Insira seu nome:');
+            const sobrenome = window.prompt('Insira seu sobrenome:');
+            const idade = window.prompt('Insira sua idade:');
+            const estado = window.prompt('Insira o estado onde mora:');
+            const cidade = window.prompt('Insira a cidade onde mora:');
+
+
+            const pessoa = new Pessoa(nome, sobrenome, idade, estado, cidade);
+
+            document.getElementById("data").innerHTML = Date();
+            document.getElementById("nome").innerHTML = pessoa.nome + " " + pessoa.sobrenome;
+            document.getElementById("idade").innerHTML = pessoa.idade;
+            document.getElementById("estado").innerHTML = pessoa.estado;
+            document.getElementById("cidade").innerHTML = pessoa.cidade;
+
+            console.log(pessoa);
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <script>
+        document.write('Ola Mundo');
+    </script>
+
+    <div id="dados">
+        <div id="data"></div>
+        <div id="nome"></div>
+        <div id="idade"></div>
+        <div id="estado"></div>
+        <div id="cidade"></div>
+    </div>
+
+    <input type="button" value="Carregar" onclick="carregaDados()">
+</body>
+</html>
