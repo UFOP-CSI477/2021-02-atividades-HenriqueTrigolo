@@ -11,41 +11,47 @@
 
     <title>Conversor de Moedas</title>
 </head>
-<body>
-
-    <h1>Conversor de Moedas</h1>
-
-    <div class="selecaoMoeda1">
-        <div class="row g-3">
-            <div class="col-auto">
-                <label for="moeda1">Selecione a primeira moeda</label>
-                <input class="CB" type="button" value="Carregar Moedas" onclick="carregarMoedas1()">
-                <select name="moeda1" id="moeda1"></select>
-            </div>
-
-            <div class="col-auto">
-                <label for="valor1" class="visually-hidden">Valor</label>
-                <input type="text" class="form-control" id="valor1" placeholder="Digite o valor a ser convertido">
-            </div>
-        </div>
+<body onload="carregarMoedas1(), carregarMoedas2()">
+    <div class="titulo">
+        <h1>Conversor de Moedas</h1>
     </div>
 
-    <div class="selecaoMoeda2">
-        <div class="row g-3">
-            <div class="col-auto">
-                <label for="moeda2">Selecione a segunda moeda</label>
-                <input class="CB" type="button" value="Carregar Moedas" onclick="carregarMoedas2()">
-                <select name="moeda2" id="moeda2"></select>
-            </div>
-
-            <div class="col-auto">
-                <label for="result" class="visually-hidden">Valor</label>
-                <input type="text" value="teste" disabled>
+    <div class="box">
+        <h3>Universidade Federal de Ouro Preto</h3>
+    
+        <div class="selecaoMoeda1">
+            <div class="row">
+                <div class="col-4">
+                    <label for="moeda1">Selecione a primeira moeda</label>
+                </div>
+                <div class="col-4">
+                    <select name="moeda1" id="moeda1">
+                        <option value="0">--Opções de moeda--</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="valor1" placeholder="Digite o valor a ser convertido">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="resultado">
-        <div class="col-auto">
+
+        <div class="selecaoMoeda2">
+            <div class="row">
+                <div class="col-4">
+                    <label for="moeda2">Selecione a segunda moeda</label>
+                </div>
+                <div class="col-4">
+                    <select name="moeda2" id="moeda2">
+                        <option value="0">--Opções de moeda--</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="valor1" placeholder="Conversão" disabled>
+                </div>
+            </div>
+        </div>
+
+        <div class="resultado">
             <button type="submit" class="btn btn-primary mb-3" onclick="converter(moeda1.value)">Converter</button>
         </div>
     </div>
