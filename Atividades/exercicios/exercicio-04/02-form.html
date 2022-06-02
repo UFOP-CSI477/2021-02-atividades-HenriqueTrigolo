@@ -49,8 +49,16 @@
             document.getElementById("idade").innerHTML = pessoa.idade;
             document.getElementById("estado").innerHTML = pessoa.estado;
             document.getElementById("cidade").innerHTML = pessoa.cidade;
-            console.log("teste");
+            
+            let obj = {
+                name : nome,
+                lastname : sobrenome,
+                address : {
+                    street: 'Rua Palmeiras'
+                }
+            };
 
+            console.log(obj);
         }
     </script>
 
