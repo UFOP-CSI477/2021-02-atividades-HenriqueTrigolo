@@ -17,11 +17,6 @@
         <div class="box">
             <form action="post" name="DadosForm" class="row g-3">
 
-                <div class="col-md-12" style="text-align:center;">
-                  <label for="Horario" class="form-label" >Horario de Brasília</label>
-                  <input type="text" class="form-control" id="Horario" style="text-align:center;" disabled>
-                </div>
-
                 <div class="col-md-6">
                   <label for="NomeUsuario" class="form-label">Nome</label>
                   <input type="text" class="form-control" id="NomeUsuario">
@@ -51,23 +46,34 @@
                   <button type="button" class="btn btn-primary" onclick="carregaDadosDoForm()">Enviar</button>
                 </div>
 
-                <div class="info">
-                  <input type="text" class="form-control" id="nome" disabled>
-                </div>
-
-                <div class="info">
-                  <input type="text" class="form-control" id="email" disabled>
-                </div>
-
-                <div class="info">
-                  <input type="text" class="form-control" id="estado" disabled>
-                </div>
-
-                <div class="info">
-                  <input type="text" class="form-control" id="cidade" disabled>
-                </div>
               </form>
         </div>
+
+        <div class="box">
+          <form action="post" class="row g-3">
+
+              <div class="col-md-12" style="text-align:center;">
+                <label for="Horario" class="form-label" >Horario de Brasília</label>
+                <input type="text" class="form-control" id="Horario" style="text-align:center;" disabled>
+              </div>
+
+              <div class="info">
+                <input type="text" class="form-control" id="nome" disabled>
+              </div>
+
+              <div class="info">
+                <input type="text" class="form-control" id="email" disabled>
+              </div>
+
+              <div class="info">
+                <input type="text" class="form-control" id="estado" disabled>
+              </div>
+
+              <div class="info">
+                <input type="text" class="form-control" id="cidade" disabled>
+              </div>
+            </form>
+      </div>
     </div>
 </body>
 </html>

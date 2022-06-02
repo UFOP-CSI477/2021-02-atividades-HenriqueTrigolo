@@ -3,17 +3,17 @@ body{
 }
 
 .conteiner{
-    width: 100vw;
-    height: 120vh; 
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    gap: 10px;
 }
 
 .box{
     width: 500px;
-    height: 650px;
+    height: fit-content;
     background-color: rgb(200, 200, 200);
     padding: 20px;
     border-radius: 20px;
