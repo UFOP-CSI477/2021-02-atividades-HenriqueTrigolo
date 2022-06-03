@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    font-family: monospace;
+}
+
+form{
+    background-color: #D3D3D3;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.link{
+    background-color: blue;
+    color: #D3D3D3;
+    font-size: 20px;
+}
