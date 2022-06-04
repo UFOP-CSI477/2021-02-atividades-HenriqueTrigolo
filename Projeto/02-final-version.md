@@ -1,6 +1,6 @@
 # **CSI606-2021-02 - Remoto - Trabalho Final - Resultados**
 
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Henrique Trigolo de Almeida - 16.1.8195*
 
 --------------
 
@@ -8,22 +8,43 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+Este trabalho se trata de um sistema web para fazer o controle de entrada e
+saída de veículos em um estacionamento, sendo possível adicionar e retirar um
+veículo do sistema e guardar suas informações, sendo elas:
+● Nome do proprietário
+● Marca do veículo
+● Modelo do veículo
+● Placa do veículo
+● Hora em que foi inserido no sistema
+● Vaga ocupada
+● Valor a ser cobrado por hora
 
 ### 1. Funcionalidades implementadas
-<!-- Descrever as funcionalidades que eram previstas e foram implementas. -->
-  
+
+● Tela de login com "Usuário" e "Senha"
+● Adicionar e remover veículos
+● API que carrega a marca e modelo do veículo
+● Atualização da hora em que o veículo foi inserido no sistema
+● Verificar vaga livre e ocupada
+● Verificar valor a ser cobrado por estadia  
+
 ### 2. Funcionalidades previstas e não implementadas
-<!-- Descrever as funcionalidades que eram previstas e não foram implementas, apresentando uma breve justificativa do porquê elas não foram incluídas -->
+
+● Criação de novos usuários
+● Validação de senhas e usuários
+● API que carrega motocicletas
 
 ### 3. Outras funcionalidades implementadas
-<!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
+
+● Confirmação dos dados do dono do veículo
 
 ### 4. Principais desafios e dificuldades
-<!-- Descrever os principais desafios encontrados no desenvolvimento do trabalho, quais foram as dificuldades e como elas foram superadas e resolvidas. -->
+
+Inicialmente tive problemas com a parte de design do site, não tive muitas ideias sobre como iria desenhar o layout do site de modo que fosse intuitivo e atraente para o usuário final. Apresentei uma certa dificuldade com a parte do CSS também, na parte de criar o visual juntamente com o Bootstrap.
 
 ### 5. Instruções para instalação e execução
-<!-- Descrever o que deve ser feito para instalar (ou baixar) a aplicação, o que precisa ser configurando (parâmetros, banco de dados e afins) e como executá-la. -->
+
+Necessário fazer o download da pasta "estacionamento", após isso, necessário criar o banco de dados no xampp, inserindo um ID, Marca do veículo, Modelo do veículo, Vaga ocupada, Nome do proprietário, Placa do veículo e Horario de entrada.
 
 ### 6. Referências
-<!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
+Sem referências.
