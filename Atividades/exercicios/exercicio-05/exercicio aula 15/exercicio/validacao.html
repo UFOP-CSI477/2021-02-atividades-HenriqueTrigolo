@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="validacao.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Cadastro de pessoa</title>
+    <script src="validacao.js"></script>
+</head>
+<body>
+    <div class="conteinerHTML">
+        <div class="box">
+            <div class="titulo">
+                <h1>Dados do cadastro da pessoa</h1>
+            </div>
+            <div class="formDados">
+                <form action="validar.php" method="post" name="dados">
+                    <div class="row mb-3">
+                      <label for="PrimeiroNome" class="col-sm-4 col-form-label">Primeiro Nome</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" name="PrimeiroNome" id="PrimeiroNome">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="Sobrenome" class="col-sm-4 col-form-label">Sobrenome</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" name="Sobrenome" id="Sobrenome">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="Idade" class="col-sm-4 col-form-label">Idade</label>
+                        <div class="col-sm-3">
+                          <input type="number" class="form-control" name="Idade" id="Idade">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="Estado" class="col-sm-4 col-form-label">Estado</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="Estado" id="Estado">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="Cidade" class="col-sm-4 col-form-label">Cidade</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="Cidade" id="Cidade">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="Endereco" class="col-sm-4 col-form-label">Endereço</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="Endereco" id="Endereco">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="Telefone" class="col-sm-4 col-form-label">Telefone</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="Telefone" id="Telefone">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="Email" class="col-sm-4 col-form-label">E-mail</label>
+                        <div class="col-sm-6">
+                          <input type="email" class="form-control" name="Email" id="Email">
+                        </div>
+                    </div>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-4 pt-0">Gênero</legend>
+                        <div class="col-sm-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="masculino" value="Masculino">
+                                <label class="form-check-label" for="masculino">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="feminino" value="Feminino">
+                                <label class="form-check-label" for="feminino">Feminino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="naoBinario" value="Não Binário">
+                                <label class="form-check-label" for="naoBinario">Não Binário</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="naoResponder" value="Prefiro não responder">
+                                <label class="form-check-label" for="naoResponder">Prefiro não responder</label>
+                            </div>
+                      </div>
+                    </fieldset>
+                    <fieldset  class="row mb-3">
+                        <legend class="col-form-label col-sm-4 pt-0">Área de Interesse</legend>
+                        <div class="col-sm-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1" name="checkbox" value="Sistemas Web">
+                                <label class="form-check-label" for="gridCheck1">Sistemas Web</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck2" name="checkbox" value="Banco de Dados">
+                                <label class="form-check-label" for="gridCheck2">Banco de Dados</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck3" name="checkbox" value="Redes de Computadores">
+                                <label class="form-check-label" for="gridCheck3">Redes de Computadores</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck4" name="checkbox" value="Algoritmo e Estrutura de Dados">
+                                <label class="form-check-label" for="gridCheck4">Algoritmo e Estrutura de Dados</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck5" name="checkbox" value="Programação de Computadores">
+                                <label class="form-check-label" for="gridCheck5">Programação de Computadores</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck6" name="checkbox" value="Teoria dos Grafos">
+                                <label class="form-check-label" for="gridCheck6">Teoria dos Grafos</label>
+                            </div>
+                      </div>
+                    </fieldset>
+                    <div class="retorno">
+                        <button type="submit" class="btn btn-primary " onclick="calcular()">Enviar</button>
+                    </div>
+                    
+                  </form>
+            </div>
+        </div>      
+    </div>
+</body>
+</html>
