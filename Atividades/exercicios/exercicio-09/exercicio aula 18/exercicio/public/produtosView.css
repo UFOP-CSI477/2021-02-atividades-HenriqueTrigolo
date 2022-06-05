@@ -1,0 +1,29 @@
+.conteiner{
+    background-color: rgb(50, 50, 50);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 600px;
+    height: fit-content;
+    text-align: center;
+    background-color: rgba(255, 140, 0, 0.500);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+label{
+    text-align: left;
+    color:white;
+    font-weight: 500;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
