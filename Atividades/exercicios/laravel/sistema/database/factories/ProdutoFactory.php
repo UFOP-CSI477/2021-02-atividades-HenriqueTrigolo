@@ -15,7 +15,7 @@ class ProdutoFactory extends Factory
     {
         return [
             'nome' => $this->faker->firstNameMale,
-            'um' => $this->faker->randomDigitNotNull + 'cm'
+            'um' => $this->faker->randomDigitNotNull
         ];
     }
 }
