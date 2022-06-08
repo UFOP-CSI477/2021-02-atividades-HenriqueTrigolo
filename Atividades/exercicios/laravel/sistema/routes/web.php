@@ -22,16 +22,10 @@ Route::get('/', function () {
     return view('principal');
 })->name('principal');
 
-Route::get('/produtos/{id}', function($id){
-    return Produto::find($id);
-});
-
 Route::resource('/estados', EstadoController::class);
 Route::resource('/produtos', ProdutoController::class);
 
 Route::get('/produtos/{id}', function($id){
-    
-   
     return Produto::find($id);
 });
 

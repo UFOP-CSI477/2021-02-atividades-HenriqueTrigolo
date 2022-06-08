@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-
+    
     <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -20,13 +20,20 @@
             <a class="nav-link active" aria-current="page" href="{{route('principal')}}">Pagina Inicial</a>
             <a class="nav-link" href="{{route('estados.index')}}">Estados</a>
             <a class="nav-link" href="{{route('produtos.index')}}">Produtos</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link disabled">Inativo</a>
+            <a class="nav-link disabled">Inativo</a>
         </div>
         </div>
     </div>
     </nav>
+    
+    @if(session('mensagem'))
 
+        <div class="alert alert-success">
+            {{session('mensagem')}}
+        </div>
+
+    @endif
 
 
     @yield('conteudo')
